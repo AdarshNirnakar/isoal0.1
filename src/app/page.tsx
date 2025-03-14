@@ -10,9 +10,9 @@ export default function Home() {
       <Nav />
       <ThreeD />
       {/* <MainNav /> */}
-      <Isoal_ai />
+      {/* <Isoal_ai />
       <WhoAndWho/>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

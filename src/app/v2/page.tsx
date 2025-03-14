@@ -1,12 +1,19 @@
 import Link from "next/link"
+import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from "lucide-react"
+import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonial"
+
+
+
+
+
 
 export default function V2HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-purple-600 text-white py-40">
+      {/* <section className="bg-purple-600 text-white py-40">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Transform Your Global Education Journey</h1>
@@ -23,7 +30,42 @@ export default function V2HomePage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <section className="pt-16 pb-20 md:pt-20 md:pb-28">
+              <div className="container mt-10 mx-auto px-4">
+                <div className="flex flex-col md:flex-row items-center">
+                  <div className="md:w-1/2 md:pr-12">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                      Achieve Global Career Success
+                    </h1>
+                    <p className="text-lg md:text-xl text-gray-600 mb-8">
+                      Land Your Dream Job Across Borders—Break Free from Traditional
+                      Recruitment and Build a World-Class Network.
+                    </p>
+                    <Button size="lg" className="text-lg px-8 py-6">
+                      Register for Your FREE 30-Minute Session
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                    <p className="mt-6 text-gray-500">
+                      Unlock international opportunities with ISAOL’s innovative
+                      approach. Say goodbye to costly intermediaries and hello to a
+                      transparent, results-driven career path.
+                    </p>
+                  </div>
+                  <div className="md:w-1/2 mt-12 md:mt-0">
+                    <Image
+                      src="/placeholder.svg?height=500&width=500"
+                      width={500}
+                      height={500}
+                      alt="Global Opportunities"
+                      className="rounded-xl shadow-xl"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+      
 
       {/* What is ISAOL Section
       <section className="py-16">
@@ -166,10 +208,7 @@ export default function V2HomePage() {
             </div>
           </div>
         </div>
-      </section>
-
-      
-      
+      </section>      
 
       {/* Additional Tracks Section */}
       <section className="py-16">
@@ -270,7 +309,7 @@ export default function V2HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
 
@@ -323,9 +362,9 @@ export default function V2HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* FAQ Section */}
+     <AnimatedTestimonialsDemo/>
       
 
       {/* CTA Section */}
