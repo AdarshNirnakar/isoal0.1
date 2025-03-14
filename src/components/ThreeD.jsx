@@ -1,62 +1,54 @@
 "use client";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Spline from "@splinetool/react-spline";
 
 const Websites = () => {
   const router = useRouter();
-  const models = [
-    "https://prod.spline.design/G6k4Zyoexy5C1b0M/scene.splinecode",
-    "https://prod.spline.design/fr4GYkVylV5NyUog/scene.splinecode",
-  ];
-
-  const labels = ["ISAOL FOR GLOBAL OPPORTUNITIES", " ISAOL FOR HIGHER STUDIES", ];
-  const routes = ["/v1", "/v2", "/v3"];
-
-  // Function to handle navigation
-  const handleNavigation = (route) => {
-    router.push(route);
-  };
 
   return (
-    <div
-      id="page3"
-      className="min-h-screen w-full flex flex-col md:flex-col items-center justify-center overflow-hidden gap-4 py-16 bg-gradient-to-b from-gray-100 to-white"
-    >
-      <div className="w-full mt-15 px-6 mb-12 md:mb-0 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Our Digital Ecosystem
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Explore our interconnected platforms designed to maximize your
-          opportunities.
-        </p>
-      </div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-6 text-center w-full relative overflow-hidden">
+      
 
-      <div className="w-full flex flex-col md:flex-row gap-6 px-6">
-        {models.map((src, index) => (
-          <div
-            key={index}
-            className="h-[50vh] md:h-[70vh] w-full flex-1 flex items-center justify-center relative group rounded-2xl overflow-hidden shadow-lg border border-gray-200 cursor-pointer"
-            onClick={() => handleNavigation(routes[index])}
-          >
-            <Spline scene={src} className="h-full w-full" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-90 group-hover:opacity-0 transition-opacity duration-500 bg-gradient-to-t from-black via-black/70 to-transparent">
-              <span className="text-white text-3xl md:text-2xl font-bold mb-4">
-                {labels[index]}
-              </span>
-              <button
-                className="px-6 py-2 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full hover:bg-white/30 transition-colors duration-300"
-                onClick={(e) => {
-                  e.stopPropagation(); // Prevent triggering the parent div's onClick
-                  handleNavigation(routes[index]);
-                }}
-              >
-                Explore
-              </button>
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[url('/wave-pattern.svg')] bg-cover opacity-10" />
+
+      {/* Content Container */}
+      <div className="relative flex flex-col gap-6 mt-20 w-full max-h-[70vh] overflow-hidden">
+        {/* First Section */}
+        <div className="flex items-center justify-between w-full px-8">
+          <div className="w-1/3 text-left">
+            <h2 className="text-4xl ml-10 font-bold text-gray-900">isoal.com</h2>
+            <p className="ml-10 text-gray-700">A transformative workshop designed to empower you with the skills, strategies, and confidence to bypass outdated systems. We provide a holistic, transparent approach—saving you up to 50%+ on costs—so you can create your own path to success.</p>
+          </div>
+          <div className="w-2/3 h-[200px] rounded-[100px] overflow-hidden shadow-lg relative group">
+            <Image src="/img1.jpg" alt="Turtle" layout="responsive" width={500} height={200} />
+            <div className="absolute inset-0 flex items-center justify-center backdrop-blur-md bg-white/30 text-white text-3xl font-bold transition-all duration-300 opacity-100 group-hover:opacity-0">
+              isoal.com
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Second Section */}
+        <div className="flex items-center justify-between w-full px-8">
+          <div className="w-2/3 h-[200px] rounded-[100px] overflow-hidden shadow-lg relative group">
+            <Image src="/img2.jpg" alt="Diver with Whale Shark" layout="responsive" width={500} height={200} />
+            <div className="absolute inset-0 flex items-center justify-center backdrop-blur-md bg-white/30 text-white text-3xl font-bold transition-all duration-300 opacity-100 group-hover:opacity-0">
+              isoal.ai
+            </div>
+          </div>
+          <div className="w-1/3 text-right">
+            <h2 className="text-4xl mr-10 font-bold text-gray-900">isoal.ai</h2>
+            <p className="mr-10 text-gray-700">Increase Surface Area of Luck – a transformative workshop designed to empower you with the skills, strategies, and confidence to bypass outdated systems. Learn More.</p>
+          </div>
+        </div>
       </div>
+
+      {/* Bottom Section */}
+      {/* <div className="mt-12 w-full max-w-4xl text-center p-6 bg-gray-100 rounded-2xl shadow-lg">
+        <h3 className="text-2xl font-bold text-gray-900">Increase Surface Area of Luck</h3>
+        <p className="text-gray-700 mt-2">A transformative workshop designed to empower you with the skills, strategies, and confidence to bypass outdated systems. We provide a holistic, transparent approach—saving you up to 50%+ on costs—so you can create your own path to success.</p>
+        <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-full text-lg font-medium hover:bg-blue-700 transition">Learn More</button>
+      </div> */}
     </div>
   );
 };
