@@ -1,11 +1,14 @@
 import Image from "next/image"
+import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Check } from "lucide-react"
 
 export default function V1AboutPage() {
   return (
     <>
       {/* Hero Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mt-10 mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">What is ISAOL?</h1>
             <p className="text-lg text-gray-600">
@@ -40,6 +43,66 @@ export default function V1AboutPage() {
                 development, by eliminating unnecessary middlemen and providing you with direct tools and strategies to
                 succeed.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      
+
+{/* Early Access Section */}
+<section className="py-16 bg-purple-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6">Early Access – Your Dedicated Career Agent</h2>
+            <p className="text-center text-lg mb-12">Be among the first to experience a game-changing advantage</p>
+
+            <div className="bg-white p-8 rounded-xl shadow-md">
+              <p className="text-lg mb-6">
+                Gain exclusive early access to a dedicated career agent who will guide you one-on-one through every step
+                of your academic journey.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5">
+                    <Check className="h-4 w-4 text-purple-600" />
+                  </div>
+                  <span className="text-gray-700">
+                    <strong>Personalized Guidance:</strong> Get expert advice on crafting a standout application and
+                    preparing for interviews.
+                  </span>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5">
+                    <Check className="h-4 w-4 text-purple-600" />
+                  </div>
+                  <span className="text-gray-700">
+                    <strong>Tailored Strategies:</strong> Secure admission at top universities efficiently—at the price
+                    you rightly deserve.
+                  </span>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5">
+                    <Check className="h-4 w-4 text-purple-600" />
+                  </div>
+                  <span className="text-gray-700">
+                    <strong>Ongoing Support:</strong> Your career agent will be with you from application to enrollment,
+                    ensuring you have the tools to succeed.
+                  </span>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Button className="bg-purple-600 hover:bg-purple-700">
+                  Apply for Early Access
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -120,8 +183,34 @@ export default function V1AboutPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      {/* <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">FAQ</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2">Q: Is the session really free?</h3>
+              <p className="text-lg text-gray-700">A: Yes—there’s no cost to attend our 30-minute session.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2">Q: Do I need prior experience?</h3>
+              <p className="text-lg text-gray-700">A: No. ISAOL is designed for every stage—from students and professionals to returning talent and first-time founders.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2">Q: Will this session help me secure a spot at a top university, land a global job, or launch my startup?</h3>
+              <p className="text-lg text-gray-700">A: Absolutely. You’ll gain actionable strategies tailored to your specific goals.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-2">Q: What if I can’t attend live?</h3>
+              <p className="text-lg text-gray-700">A: Register anyway, and we’ll send you a recording of the session.</p>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+
       {/* Team Section */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -183,7 +272,7 @@ export default function V1AboutPage() {
       </section>
 
       {/* Company Info */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">About Deeproot, Inc.</h2>
@@ -223,4 +312,3 @@ export default function V1AboutPage() {
     </>
   )
 }
-

@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
+import Link from "next/link";
 
 const Nav = () => {
   const navRef = useRef(null);
@@ -69,12 +70,14 @@ const Nav = () => {
       </div>
       
       {/* Adding a minimal navigation menu */}
-      <div className="hidden md:flex space-x-4 pr-8">
-        {/* <a href="#" className="text-gray-800 hover:text-black font-medium transition-colors">Home</a>
-        <a href="#" className="text-gray-800 hover:text-black font-medium transition-colors">About</a>
-        <a href="#" className="text-gray-800 hover:text-black font-medium transition-colors">Services</a>
-        <a href="#" className="text-gray-800 hover:text-black font-medium transition-colors">Contact</a> */}
-        <h1 className="text-3xl font-sans font-bold tracking-tight leading-[0.85]">Increase Surface Area of Luck</h1>
+      <div className="hidden md:flex space-x-8 pr-8">
+        <Link href="/" className="text-gray-800 hover:text-black font-medium transition-colors">ISAOL</Link>
+        <Link href="/v1" className="text-gray-800 hover:text-black font-medium transition-colors">HOME</Link>
+        <Link href="/v1/about" className="text-gray-800 hover:text-black font-medium transition-colors">ABOUT</Link>
+        <Link href="/v1/faq" className="text-gray-800 hover:text-black font-medium transition-colors">FAQ</Link>
+        
+        <Link href="/v1/contact" className="text-gray-800 hover:text-black font-medium transition-colors">CONTACT</Link>
+        
       </div>
     </div>
   );

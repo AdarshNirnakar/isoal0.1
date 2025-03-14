@@ -1,5 +1,6 @@
 import FloatingNavBar from "@/components/FloatingNavBar";
 import Link from "next/link";
+import Nav from "./Nav";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -7,7 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <FloatingNavBar />
+      <div>
+        <Nav />
+      </div>
+
       {children}
     </div>
   );

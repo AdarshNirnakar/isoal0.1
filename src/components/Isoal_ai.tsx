@@ -6,9 +6,7 @@ const Isoal_ai = () => {
       <div className="w-full md:w-1/2 flex items-center justify-center relative bg-black py-16 md:py-0">
         <div className="text-left bg-black h-full flex items-center w-full text-white px-8 md:px-16 lg:px-20 overflow-hidden">
           <div className="max-w-xl">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              ISAOL
-            </h2>
+            
             <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mb-8">
               Increase Surface Area of Luck
             </h1>
@@ -29,6 +27,9 @@ const Isoal_ai = () => {
           <Robot />
         </div>
       </div>
+
+
+      
     </div>
   )
 }
