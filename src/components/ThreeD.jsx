@@ -45,27 +45,11 @@ const Websites = () => {
   return (
     <div className="relative max-h-screen bg-gradient-to-b from-white to-gray-50 overflow-hidden">
 
-      {/* Navigation Bar */}
+      
       
 
       {/* Custom cursor effect */}
-      {hovered && (
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{
-            scale: 1,
-            opacity: 0.8,
-            x: mousePosition.x,
-            y: mousePosition.y,
-          }}
-          className="fixed w-20 h-20 rounded-full bg-primary/10 pointer-events-none z-50 hidden md:flex items-center justify-center"
-          style={{
-            transform: `translate(-50%, -50%)`,
-          }}
-        >
-          <ArrowRight className="text-primary w-6 h-6" />
-        </motion.div>
-      )}
+      
 
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[url('/wave-pattern.svg')] bg-cover opacity-5" />
