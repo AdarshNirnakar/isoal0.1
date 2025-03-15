@@ -43,14 +43,7 @@ const Websites = () => {
   }
 
   return (
-    <div className="relative max-h-screen bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-
-      
-      
-
-      {/* Custom cursor effect */}
-      
-
+    <div className="relative max-h-screen bg-gradient-to-b from-white to-gray-50 overflow-y-auto overflow-x-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[url('/wave-pattern.svg')] bg-cover opacity-5" />
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
