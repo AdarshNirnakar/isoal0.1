@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Globe, DollarSign, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import HoverOnPrograms from "@/components/HoverOnPrograms"
+
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonial"
 import { motion } from "framer-motion"
 
@@ -178,35 +178,82 @@ const Page = () => {
         </div>
       </motion.section>
 
-      {/* Featured Programs Section */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-        className="py-20 bg-gradient-to-b from-white to-gray-50"
-      >
+      {/* Programs Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Our Innovative Programs</h2>
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            At ISAOL, we&apos;re pioneering programs that no one else in the world has dared to create. Explore our exclusive
-            suite of offerings:
-          </p>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold text-center mb-12"
+          >
+            Our Groundbreaking Programs
+          </motion.h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold mb-4">Global Fusion Program</h3>
+              <p className="text-gray-600 mb-4">
+                Engage in immersive virtual reality sessions and live global networking with top education mentors.
+              </p>
+              <Link
+                href="/v2/programs"
+                className="text-purple-600 font-semibold hover:underline inline-flex items-center"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </motion.div>
 
-          <div className="relative">
-            <HoverOnPrograms />
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold mb-4">Talent Incubator Accelerator</h3>
+              <p className="text-gray-600 mb-4">
+                Get matched with successful alumni and academic leaders to fast-track your path to your dream
+                university.
+              </p>
+              <Link
+                href="/v2/programs"
+                className="text-purple-600 font-semibold hover:underline inline-flex items-center"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold mb-4">Cross-Cultural Immersion Bootcamp</h3>
+              <p className="text-gray-600 mb-4">
+                Collaborate on international projects to build a competitive academic profile.
+              </p>
+              <Link
+                href="/v2/programs"
+                className="text-purple-600 font-semibold hover:underline inline-flex items-center"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </motion.div>
           </div>
-
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="text-center mt-12">
-            <Link href="/v1/programs">
-              <Button variant="outline" size="lg" className="group">
-                View All Programs
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-          </motion.div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Additional Tracks Section */}
       <motion.section

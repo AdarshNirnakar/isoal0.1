@@ -292,7 +292,7 @@ export default function V2HomePage() {
               <h3 className="text-xl font-bold mb-4">Super 30</h3>
               <p className="text-gray-600 italic mb-3">
               &quot;The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things
-                differently. They&apos;re not fond of rules, and they have no respect for the status quo.&quot;
+                differently. They're not fond of rules, and they have no respect for the status quo.&quot;
               </p>
               <p className="text-gray-600 mb-4">
                 For non-traditional aspirants from fields like farming, security, or homemaking—Super 30 celebrates your
