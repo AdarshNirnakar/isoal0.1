@@ -10,6 +10,7 @@ const Nav = () => {
   const iconRef = useRef(null);
   const isaolRef = useRef(null);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // state to toggle mobile menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +19,7 @@ const Nav = () => {
       // Hide navbar IMMEDIATELY when scrolling down
       if (scrollY > lastScrollY) {
         gsap.to(navRef.current, { y: -100, opacity: 0, duration: 0.2, ease: "power2.out" });
-      } 
+      }
       // Show navbar INSTANTLY when scrolling up
       else {
         gsap.to(navRef.current, { y: 0, opacity: 1, duration: 0.15, ease: "power2.out" });
@@ -68,17 +69,44 @@ const Nav = () => {
           style={{ opacity: 0, transform: "translateY(20px)" }}
         />
       </div>
-      
-      {/* Adding a minimal navigation menu */}
+
+      {/* Hamburger Icon for Small Screens */}
+      <div className="md:hidden flex items-center">
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-gray-800 hover:text-black focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      {/* Navigation Links for Desktop */}
       <div className="hidden md:flex space-x-8 pr-8">
         <Link href="/" className="text-gray-800 hover:text-black font-medium transition-colors">ISAOL</Link>
         <Link href="/v1" className="text-gray-800 hover:text-black font-medium transition-colors">HOME</Link>
         <Link href="/v1/about" className="text-gray-800 hover:text-black font-medium transition-colors">ABOUT</Link>
         <Link href="/v1/faq" className="text-gray-800 hover:text-black font-medium transition-colors">FAQ</Link>
-        
         <Link href="/v1/contact" className="text-gray-800 hover:text-black font-medium transition-colors">CONTACT</Link>
-        
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {isMenuOpen && (
+        <div className="absolute top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-6 md:hidden transition-all duration-300">
+          <Link href="/" className="text-gray-800 hover:text-black font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>ISAOL</Link>
+          <Link href="/v1" className="text-gray-800 hover:text-black font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>HOME</Link>
+          <Link href="/v1/about" className="text-gray-800 hover:text-black font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
+          <Link href="/v1/faq" className="text-gray-800 hover:text-black font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
+          <Link href="/v1/contact" className="text-gray-800 hover:text-black font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>CONTACT</Link>
+        </div>
+      )}
     </div>
   );
 };
