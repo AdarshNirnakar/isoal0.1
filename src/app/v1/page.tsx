@@ -54,7 +54,7 @@ const Page = () => {
   }
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
+    <div className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 ">
       {/* Custom cursor effect */}
       {/* <div
           className="fixed w-8 h-8 rounded-full bg-primary/20 pointer-events-none z-50 hidden md:block"
@@ -65,6 +65,53 @@ const Page = () => {
             transition: "transform 0.1s ease-out",
           }}
         /> */}
+{/* Hero Section */}
+<section ref={heroRef} className="relative pt-16 pb-16 md:pt-24 md:pb-20 lg:pt-32 lg:pb-28 overflow-hidden">
+  <div className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={staggerChildren}
+      className="flex flex-col-reverse lg:flex-row items-center"
+    >
+      {/* Text Section */}
+      <motion.div variants={fadeInUp} className="w-full lg:w-1/2 lg:pr-12 text-center lg:text-left">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+          Achieve Global Career Success
+        </h1>
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8">
+          Land Your Dream Job Across Borders—Break Free from Traditional Recruitment and Build a World-Class
+          Network.
+        </p>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="flex justify-center lg:justify-start">
+          <Button size="lg" className="text-lg px-6 py-4 md:px-8 md:py-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            Register for Your FREE 30-Minute Session
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </motion.div>
+        <p className="mt-4 sm:mt-6 text-gray-500">
+          Unlock international opportunities with ISAOL&apos;s innovative approach. Say goodbye to costly
+          intermediaries and hello to a transparent, results-driven career path.
+        </p>
+      </motion.div>
+
+      {/* Image Section */}
+      <motion.div variants={fadeInUp} className="w-full lg:w-1/2 mt-10 lg:mt-0">
+        <div className="relative flex justify-center">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-xl blur-xl opacity-70"></div>
+          <Image
+            src="/img1.jpg?height=500&width=500"
+            width={500}
+            height={500}
+            alt="Global Opportunities"
+            className="relative rounded-xl shadow-xl hover:shadow-2xl transition-all duration-500 z-10 w-3/4 sm:w-2/3 md:w-1/2 lg:w-full"
+          />
+          <div className="absolute -bottom-4 -right-4 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 bg-primary/10 rounded-full blur-xl"></div>
+        </div>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Background gradient elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
@@ -73,50 +120,7 @@ const Page = () => {
         <div className="absolute bottom-0 right-1/4 w-1/3 h-1/3 bg-purple-100/20 rounded-full blur-3xl" />
       </div>
 
-      {/* Hero Section */}
-      <section ref={heroRef} className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerChildren}
-            className="flex flex-col md:flex-row items-center"
-          >
-            <motion.div variants={fadeInUp} className="md:w-1/2 md:pr-12">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
-                Achieve Global Career Success
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8">
-                Land Your Dream Job Across Borders—Break Free from Traditional Recruitment and Build a World-Class
-                Network.
-              </p>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-                <Button size="lg" className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                  Register for Your FREE 30-Minute Session
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </motion.div>
-              <p className="mt-6 text-gray-500">
-                Unlock international opportunities with ISAOL&apos;s innovative approach. Say goodbye to costly
-                intermediaries and hello to a transparent, results-driven career path.
-              </p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="md:w-1/2 mt-12 md:mt-0">
-              <div className="relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-xl blur-xl opacity-70"></div>
-                <Image
-                  src="/placeholder.svg?height=500&width=500"
-                  width={500}
-                  height={500}
-                  alt="Global Opportunities"
-                  className="relative rounded-xl shadow-xl hover:shadow-2xl transition-all duration-500 z-10"
-                />
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+      
 
       {/* Why Choose Section */}
       <motion.section

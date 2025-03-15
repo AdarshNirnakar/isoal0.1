@@ -11,62 +11,67 @@ export default function V2HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-24 pb-20 md:pt-32 md:pb-28 bg-gradient-to-b from-purple-50 to-white overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="md:w-1/2 md:pr-12"
-            >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
-                Achieve Global Career Success
-              </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8">
-                Land Your Dream Job Across Borders—Break Free from Traditional Recruitment and Build a World-Class
-                Network.
-              </p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <Button size="lg" className="text-lg px-8 py-6 bg-purple-600 hover:bg-purple-700">
-                  Register for Your FREE 30-Minute Session
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </motion.div>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="mt-6 text-gray-500"
-              >
-                Unlock international opportunities with ISAOL&apos;s innovative approach. Say goodbye to costly
-                intermediaries and hello to a transparent, results-driven career path.
-              </motion.p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="md:w-1/2 mt-12 md:mt-0"
-            >
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur-lg opacity-20 animate-pulse"></div>
-                <Image
-                  src="/placeholder.svg?height=500&width=500"
-                  width={500}
-                  height={500}
-                  alt="Global Opportunities"
-                  className="rounded-xl shadow-xl relative z-10"
-                />
-              </div>
-            </motion.div>
-          </div>
+      <section className="pt-16 pb-16 md:pt-24 md:pb-20 lg:pt-32 lg:pb-28 bg-gradient-to-b from-purple-50 to-white overflow-hidden">
+  <div className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
+    <div className="flex flex-col-reverse lg:flex-row items-center">
+      {/* Text Section */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="w-full lg:w-1/2 lg:pr-12 text-center lg:text-left"
+      >
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
+          Achieve Global Career Success
+        </h1>
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8">
+          Land Your Dream Job Across Borders—Break Free from Traditional Recruitment and Build a World-Class
+          Network.
+        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex justify-center lg:justify-start"
+        >
+          <Button size="lg" className="text-lg px-6 py-4 md:px-8 md:py-6 bg-purple-600 hover:bg-purple-700">
+            Register for Your FREE 30-Minute Session
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </motion.div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="mt-4 sm:mt-6 text-gray-500"
+        >
+          Unlock international opportunities with ISAOL&apos;s innovative approach. Say goodbye to costly
+          intermediaries and hello to a transparent, results-driven career path.
+        </motion.p>
+      </motion.div>
+
+      {/* Image Section */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="w-full lg:w-1/2 mt-10 lg:mt-0"
+      >
+        <div className="relative flex justify-center">
+          <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur-lg opacity-20 animate-pulse"></div>
+          <Image
+            src="/img2.jpg?height=500&width=500"
+            width={500}
+            height={500}
+            alt="Global Opportunities"
+            className="rounded-xl shadow-xl relative z-10 w-3/4 sm:w-2/3 md:w-1/2 lg:w-full"
+          />
         </div>
-      </section>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose ISAOL Section */}
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">
