@@ -11,7 +11,7 @@ export default function V1ProgramsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Revolutionary Programs</h1>
             <p className="text-lg text-gray-600">
-              At ISAOL, we're pioneering programs that no one else in the world has dared to create. Our exclusive suite
+              At ISAOL, we&apos;re pioneering programs that no one else in the world has dared to create. Our exclusive suite
               of offerings is designed to redefine how you approach education and career development.
             </p>
           </div>
@@ -178,8 +178,8 @@ export default function V1ProgramsPage() {
                 <div className="md:w-3/5 p-8 md:order-1">
                   <h2 className="text-2xl font-bold mb-4">Super 30</h2>
                   <p className="text-gray-600 italic mb-4">
-                    "The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see
-                    things differently. They're not fond of rules, and they have no respect for the status quo."
+                  &apos;The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see
+                    things differently. They&apos;re not fond of rules, and they have no respect for the status quo.&quot;
                   </p>
                   <p className="text-gray-600 mb-6">
                     This program is dedicated to individuals from non-traditional backgrounds (security experts,
@@ -229,7 +229,7 @@ export default function V1ProgramsPage() {
                 <div className="md:w-3/5 p-8">
                   <h2 className="text-2xl font-bold mb-4">Second Innings</h2>
                   <p className="text-gray-600 mb-6">
-                    Tailored for those restarting their careers—whether you're a returning mother or a retired
+                    Tailored for those restarting their careers—whether you&apos;re a returning mother or a retired
                     professional looking to re-enter the workforce. Gain strategies to rebrand yourself, leverage your
                     existing expertise, and reconnect with modern career dynamics.
                   </p>
@@ -321,7 +321,7 @@ export default function V1ProgramsPage() {
               achieve your global ambitions.
             </p>
             <Button size="lg">
-              Register Now – It's Free!
+              Register Now – It&apos;s Free!
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

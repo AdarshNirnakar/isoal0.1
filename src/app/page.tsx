@@ -1,8 +1,8 @@
-import Isoal_ai from "@/components/Isoal_ai";
+// import Isoal_ai from "@/components/Isoal_ai";
 import Nav from "@/components/Nav";
 import ThreeD from "@/components/ThreeD";
-import Footer from "../components/Footer";
-import WhoAndWho from "@/components/WhoAndWho";
+// import Footer from "../components/Footer";
+// import WhoAndWho from "@/components/WhoAndWho";
 
 export default function Home() {
   return (

@@ -59,10 +59,10 @@ export default function V1FaqPage() {
 
               <AccordionItem value="item-4" className="border rounded-lg p-2">
                 <AccordionTrigger className="text-lg font-medium px-4">
-                  What if I can't attend the live session?
+                  What if I can&apos;t attend the live session?
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4 pt-2">
-                  Register anyway, and we'll send you a recording of the
+                  Register anyway, and we&apos;ll send you a recording of the
                   session. However, we recommend attending live if possible, as
                   it allows for real-time interaction and personalized insights.
                 </AccordionContent>

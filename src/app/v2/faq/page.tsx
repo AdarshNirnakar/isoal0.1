@@ -15,13 +15,13 @@ export default function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border rounded-lg p-2">
-              <AccordionTrigger className="text-lg font-medium px-4">Can I join if I'm returning to education later in life?</AccordionTrigger>
+              <AccordionTrigger className="text-lg font-medium px-4">Can I join if I&apos;m returning to education later in life?</AccordionTrigger>
               <AccordionContent className="px-4 pb-4 pt-2">Yes! Our Second Innings track is designed just for you.</AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border rounded-lg p-2">
-              <AccordionTrigger className="text-lg font-medium px-4">What if I can't attend live?</AccordionTrigger>
-              <AccordionContent className="px-4 pb-4 pt-2">Register anyway, and we'll send you a recording.</AccordionContent>
+              <AccordionTrigger className="text-lg font-medium px-4">What if I can&apos;t attend live?</AccordionTrigger>
+              <AccordionContent className="px-4 pb-4 pt-2">Register anyway, and we&apos;ll send you a recording.</AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>

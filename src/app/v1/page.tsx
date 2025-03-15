@@ -10,27 +10,27 @@ import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonial"
 import { motion } from "framer-motion"
 
 const Page = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const [scrollY, setScrollY] = useState(0)
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  // const [scrollY, setScrollY] = useState(0)
   const heroRef = useRef(null)
 
   // Track mouse position for custom cursor and hover effects
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY })
-    }
+    // const handleMouseMove = (e: MouseEvent) => {
+    //   setMousePosition({ x: e.clientX, y: e.clientY })
+    // }
 
-    const handleScroll = () => {
-      setScrollY(window.scrollY)
-    }
+    // const handleScroll = () => {
+    //   setScrollY(window.scrollY)
+    // }
 
-    window.addEventListener("mousemove", handleMouseMove)
-    window.addEventListener("scroll", handleScroll)
+    // window.addEventListener("mousemove", handleMouseMove)
+    // window.addEventListener("scroll", handleScroll)
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove)
-      window.removeEventListener("scroll", handleScroll)
-    }
+    // return () => {
+    //   window.removeEventListener("mousemove", handleMouseMove)
+    //   window.removeEventListener("scroll", handleScroll)
+    // }
   }, [])
 
   // Animation variants
@@ -97,7 +97,7 @@ const Page = () => {
                 </Button>
               </motion.div>
               <p className="mt-6 text-gray-500">
-                Unlock international opportunities with ISAOL's innovative approach. Say goodbye to costly
+                Unlock international opportunities with ISAOL&apos;s innovative approach. Say goodbye to costly
                 intermediaries and hello to a transparent, results-driven career path.
               </p>
             </motion.div>
@@ -189,7 +189,7 @@ const Page = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Our Innovative Programs</h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            At ISAOL, we're pioneering programs that no one else in the world has dared to create. Explore our exclusive
+            At ISAOL, we&apos;re pioneering programs that no one else in the world has dared to create. Explore our exclusive
             suite of offerings:
           </p>
 
@@ -230,7 +230,7 @@ const Page = () => {
             >
               <h3 className="text-xl font-bold mb-4">Second Innings</h3>
               <p className="text-gray-600 mb-4">
-                For those restarting their careers—whether you're a returning mother or a retired professional seeking
+                For those restarting their careers—whether you&apos;re a returning mother or a retired professional seeking
                 fresh challenges—this track provides tailored strategies to help you re-enter the workforce with renewed
                 confidence.
               </p>
@@ -250,8 +250,8 @@ const Page = () => {
             >
               <h3 className="text-xl font-bold mb-4">Super 30</h3>
               <p className="text-gray-600 italic mb-3">
-                "The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things
-                differently. They're not fond of rules, and they have no respect for the status quo."
+              &quot;The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things
+                differently. They&apos;re not fond of rules, and they have no respect for the status quo.&quot;
               </p>
               <p className="text-gray-600 mb-4">
                 For professionals from non-traditional backgrounds (security, farming, homemaking, etc.), Super 30
@@ -304,7 +304,7 @@ const Page = () => {
             <div className="relative p-8 md:p-12">
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 -z-10"></div>
 
-              <h2 className="text-3xl font-bold mb-6">What You'll Learn in the FREE 30-Minute Session</h2>
+              <h2 className="text-3xl font-bold mb-6">What You&apos;ll Learn in the FREE 30-Minute Session</h2>
               <p className="text-gray-600 mb-8">This session is your gateway to independence and global success:</p>
 
               <motion.div variants={staggerChildren} className="space-y-8">
@@ -341,7 +341,7 @@ const Page = () => {
               <motion.div variants={fadeInUp} className="mt-10">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
                   <Button size="lg" className="w-full md:w-auto shadow-lg hover:shadow-xl transition-all duration-300">
-                    Reserve Your Spot Now – It's Free!
+                    Reserve Your Spot Now – It&apos;s Free!
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </motion.div>
@@ -386,7 +386,7 @@ const Page = () => {
             </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
               <Button size="lg" className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                Register Now – It's Free!
+                Register Now – It&apos;s Free!
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>

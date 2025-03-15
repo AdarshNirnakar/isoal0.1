@@ -43,7 +43,7 @@ export default function V2HomePage() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="mt-6 text-gray-500"
               >
-                Unlock international opportunities with ISAOL's innovative approach. Say goodbye to costly
+                Unlock international opportunities with ISAOL&apos;s innovative approach. Say goodbye to costly
                 intermediaries and hello to a transparent, results-driven career path.
               </motion.p>
             </motion.div>
@@ -270,7 +270,7 @@ export default function V2HomePage() {
             >
               <h3 className="text-xl font-bold mb-4">Second Innings</h3>
               <p className="text-gray-600 mb-4">
-                For mature students returning to education—whether you're a returning mother or a seasoned professional
+                For mature students returning to education—whether you&apos;re a returning mother or a seasoned professional
                 seeking academic renewal, this track offers personalized guidance for re-entry.
               </p>
               <Link
@@ -291,8 +291,8 @@ export default function V2HomePage() {
             >
               <h3 className="text-xl font-bold mb-4">Super 30</h3>
               <p className="text-gray-600 italic mb-3">
-                "The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things
-                differently. They're not fond of rules, and they have no respect for the status quo."
+              &quot;The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things
+                differently. They're not fond of rules, and they have no respect for the status quo.&quot;
               </p>
               <p className="text-gray-600 mb-4">
                 For non-traditional aspirants from fields like farming, security, or homemaking—Super 30 celebrates your
@@ -342,7 +342,7 @@ export default function V2HomePage() {
               viewport={{ once: true }}
               className="text-3xl font-bold text-center mb-12"
             >
-              What You'll Learn in the FREE 30-Minute Session
+              What You&apos;ll Learn in the FREE 30-Minute Session
             </motion.h2>
 
             <motion.div
@@ -417,7 +417,7 @@ export default function V2HomePage() {
           >
             <h2 className="text-3xl font-bold mb-6">Your global education journey starts here.</h2>
             <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-              Register Now – It's Free!
+              Register Now – It&apos;s Free!
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>

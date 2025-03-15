@@ -227,7 +227,7 @@ export default function V1AboutPage() {
               <h3 className="text-xl font-bold mb-1">Ravishankar M</h3>
               <p className="text-gray-500 mb-4">Chief Executive Officer</p>
               <p className="text-gray-600">
-                With over 15 years of experience in global education and career development, Ravishankar leads ISAOL's
+                With over 15 years of experience in global education and career development, Ravishankar leads ISAOL&apos;s
                 mission to transform how individuals access global opportunities.
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function V1AboutPage() {
               <h3 className="text-xl font-bold mb-1">Priya Sharma</h3>
               <p className="text-gray-500 mb-4">Chief Program Officer</p>
               <p className="text-gray-600">
-                Priya oversees the development and implementation of ISAOL's revolutionary programs, ensuring they
+                Priya oversees the development and implementation of ISAOL&apos;s revolutionary programs, ensuring they
                 deliver transformative results for participants.
               </p>
             </div>

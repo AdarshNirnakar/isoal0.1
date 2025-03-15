@@ -293,7 +293,7 @@ export default function V2AboutPage() {
               <h3 className="text-xl font-bold mb-1">Ravishankar M</h3>
               <p className="text-gray-500 mb-4">Chief Executive Officer</p>
               <p className="text-gray-600">
-                With over 15 years of experience in global education and AI technology, Ravishankar leads ISAOL.ai's
+                With over 15 years of experience in global education and AI technology, Ravishankar leads ISAOL.ai&apos;s
                 mission to transform how students access global education opportunities.
               </p>
             </motion.div>
@@ -318,7 +318,7 @@ export default function V2AboutPage() {
               <h3 className="text-xl font-bold mb-1">Priya Sharma</h3>
               <p className="text-gray-500 mb-4">Chief AI Officer</p>
               <p className="text-gray-600">
-                Priya oversees the development and implementation of ISAOL.ai's AI-powered guidance systems, ensuring
+                Priya oversees the development and implementation of ISAOL.ai&apos;s AI-powered guidance systems, ensuring
                 they deliver personalized and transformative results for students.
               </p>
             </motion.div>

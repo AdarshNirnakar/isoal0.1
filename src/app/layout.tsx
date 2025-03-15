@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 
-const LausanneHeavy = localFont({
-  src: "./fonts/LausanneHeavy.otf",
-  variable: "--font-lausanne-heavy",
-});
+// const LausanneHeavy = localFont({
+//   src: "./fonts/LausanneHeavy.otf",
+//   variable: "--font-lausanne-heavy",
+// });
 
-const LausanneLight = localFont({
-  src: "./fonts/LausanneLight.otf",
-  variable: "--font-lausanne-light",
-});
+// const LausanneLight = localFont({
+//   src: "./fonts/LausanneLight.otf",
+//   variable: "--font-lausanne-light",
+// });
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
